@@ -1,0 +1,568 @@
+{
+	"info": {
+		"_postman_id": "f3910aa3-2b1d-45b6-bdb8-fe4634c5562a",
+		"name": "movieprojectapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "quanlynguoidung",
+			"item": [
+				{
+					"name": "laydanhsachnguoidung",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{url}}/api/quanlynguoidung/laydanhsachnguoidung"
+					},
+					"response": []
+				},
+				{
+					"name": "dangki",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"taiKhoan\": \"kimtrang\",\r\n  \"matKhau\": \"123456\",\r\n  \"email\": \"kimtrang@gmail.com\",\r\n  \"soDt\": \"0908652714\",\r\n  \"maNhom\": \"GH01\",\r\n  \"maLoaiNguoiDung\": \"KhachHang\",\r\n  \"hoTen\": \"Kim Trang\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/api/quanlynguoidung/dangki"
+					},
+					"response": []
+				},
+				{
+					"name": "dangnhap",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"taiKhoan\": \"kimtrang\",\r\n  \"matKhau\": \"123456\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/api/quanlynguoidung/dangnhap"
+					},
+					"response": []
+				},
+				{
+					"name": "xoanguoidung",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6ImpheW5ndXllbjE5ODgiLCJob1RlbiI6Ik5ndXllbiBUdWFuIiwiZW1haWwiOiJqYXluZ3V5ZW4xOTg4QGdtYWlsLmNvbSIsInNvRHQiOiIwOTE4MTIzOTUxIiwibWFOaG9tIjoiR0gwMSIsIm1hTG9haU5ndW9pRHVuZyI6IktoYWNoSGFuZyIsImlhdCI6MTYyNjk0NDE5MSwiZXhwIjoxNjI3OTgwOTkxfQ.C2R1bxG63RNkkNmZny2tZLUoTmy8Dia-4jIdrE44CVM",
+								"description": "khachhang",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6Im9hbmh0cmFuMTk4OCIsImhvVGVuIjoiVHJhbiBPYW5oIiwiZW1haWwiOiJvYW5odHJhbkBnbWFpbC5jb20iLCJzb0R0IjoiMDkxODEyMzk1MSIsIm1hTmhvbSI6IkdIMDEiLCJtYUxvYWlOZ3VvaUR1bmciOiJLaGFjaEhhbmciLCJpYXQiOjE2MjY5NDQyMjQsImV4cCI6MTYyNzk4MTAyNH0._17JnZwFsl1BO1qvB9bOAp9ETPijKqloQ9u2h7hp764",
+								"description": "khachhang",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6ImpheW5ndXllbjIwMDAiLCJob1RlbiI6Ik5ndXllbiBUdWFuIiwiZW1haWwiOiJqYXluZ3V5ZW4xOTg4QGdtYWlsLmNvbSIsInNvRHQiOiIwOTE4MTIzOTUxIiwibWFOaG9tIjoiR0gwMSIsIm1hTG9haU5ndW9pRHVuZyI6IkFkbWluIiwiaWF0IjoxNjI2OTQ0OTkxLCJleHAiOjE2Mjc5ODE3OTF9.TmL8UaqeaFTHMuXrBTD7lLDtKWWAb14hbwDQZobCzXQ",
+								"description": "admin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/quanlynguoidung/xoanguoidung?TaiKhoan=tuanoanh",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlynguoidung",
+								"xoanguoidung"
+							],
+							"query": [
+								{
+									"key": "TaiKhoan",
+									"value": "tuanoanh"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "capnhatthongtinnguoidung",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6ImtpbXRyYW5nIiwiaG9UZW4iOiJLaW0gVHJhbmciLCJlbWFpbCI6ImtpbXRyYW5nQGdtYWlsLmNvbSIsInNvRHQiOiIwOTA4NjUyNzE0IiwibWFOaG9tIjoiR0gwMSIsIm1hTG9haU5ndW9pRHVuZyI6IktoYWNoSGFuZyIsImlhdCI6MTYzNjIwMjQ5NCwiZXhwIjoxNjM3MjM5Mjk0fQ.ksG5dUcej42BjKNgKSKAcQ2W7L6x5gQhZawZPuYCjBQ",
+								"description": "khachhang",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"taiKhoan\": \"kimtrang\",  \r\n  \"email\": \"kimtrang@gmail.com\",\r\n  \"soDt\": \"0908652715\",\r\n  \"maNhom\": \"GH01\",\r\n  \"maLoaiNguoiDung\": \"Admin\",\r\n  \"hoTen\": \"Vo Thi Kim Trang\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/api/quanlynguoidung/capnhatthongtinnguoidung"
+					},
+					"response": []
+				},
+				{
+					"name": "laydanhsachnguoidungphantrang",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/quanlynguoidung/laydanhsachnguoidungphantrang?MaNhom=GH01&soTrang=1&soPhanTuTrenTrang=20",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlynguoidung",
+								"laydanhsachnguoidungphantrang"
+							],
+							"query": [
+								{
+									"key": "MaNhom",
+									"value": "GH01"
+								},
+								{
+									"key": "soTrang",
+									"value": "1"
+								},
+								{
+									"key": "soPhanTuTrenTrang",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "timkiemnguoidung",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/quanlynguoidung/timkiemnguoidung?MaNhom=GH01&tuKhoa=kimtrang",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlynguoidung",
+								"timkiemnguoidung"
+							],
+							"query": [
+								{
+									"key": "MaNhom",
+									"value": "GH01"
+								},
+								{
+									"key": "tuKhoa",
+									"value": "kimtrang"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "timkiemnguoidungphantrang",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/quanlynguoidung/timkiemnguoidungphantrang?MaNhom=GH01&tuKhoa=kimtrang&soTrang=1&soPhanTuTrenTrang=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlynguoidung",
+								"timkiemnguoidungphantrang"
+							],
+							"query": [
+								{
+									"key": "MaNhom",
+									"value": "GH01"
+								},
+								{
+									"key": "tuKhoa",
+									"value": "kimtrang"
+								},
+								{
+									"key": "soTrang",
+									"value": "1"
+								},
+								{
+									"key": "soPhanTuTrenTrang",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "thongtintaikhoan",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6ImtpbXRyYW5nIiwiaG9UZW4iOiJWbyBUaGkgS2ltIFRyYW5nIiwiZW1haWwiOiJraW10cmFuZ0BnbWFpbC5jb20iLCJzb0R0IjoiMDkwODY1MjcxNSIsIm1hTmhvbSI6IkdIMDEiLCJtYUxvYWlOZ3VvaUR1bmciOiJBZG1pbiIsImlhdCI6MTYzNjIwMjcyOSwiZXhwIjoxNjM3MjM5NTI5fQ.AfYOzEk8rZ3TBDZR1wqa-bnCb25PwrFkVYx_DYWb40k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"taiKhoan\":\"kimtrang\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/api/quanlynguoidung/thongtintaikhoan"
+					},
+					"response": []
+				},
+				{
+					"name": "themnguoidung",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6ImtpbXRyYW5nIiwiaG9UZW4iOiJWbyBUaGkgS2ltIFRyYW5nIiwiZW1haWwiOiJraW10cmFuZ0BnbWFpbC5jb20iLCJzb0R0IjoiMDkwODY1MjcxNSIsIm1hTmhvbSI6IkdIMDEiLCJtYUxvYWlOZ3VvaUR1bmciOiJBZG1pbiIsImlhdCI6MTYzNjIwMjcyOSwiZXhwIjoxNjM3MjM5NTI5fQ.AfYOzEk8rZ3TBDZR1wqa-bnCb25PwrFkVYx_DYWb40k",
+								"description": "Admin",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6ImJhb3RyYW0iLCJob1RlbiI6Ik5ndXllbiBUdWFuIiwiZW1haWwiOiJqYXluZ3V5ZW4xOTg4QGdtYWlsLmNvbSIsInNvRHQiOiIwOTE4MTIzOTUxIiwibWFOaG9tIjoiR0gwMSIsIm1hTG9haU5ndW9pRHVuZyI6IktoYWNoSGFuZyIsImlhdCI6MTYyNzAzMjU5NiwiZXhwIjoxNjI4MDY5Mzk2fQ.pNN9I4pM0kTNOSsfLZ-4Ohw8rz_gwTRLRB532qeQdjg",
+								"description": "KhachHang",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"taiKhoan\": \"trucquynh\",\r\n    \"matKhau\": \"456789\",\r\n    \"email\": \"trucquynh@gmail.com\",\r\n    \"soDt\": \"0918896423\",\r\n    \"maNhom\": \"GH01\",\r\n    \"maLoaiNguoiDung\": \"KhachHang\",\r\n    \"hoTen\": \"Trương Ngọc Trúc Quỳnh\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/api/quanlynguoidung/themnguoidung"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "quanlyphim",
+			"item": [
+				{
+					"name": "themphim",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6ImtpbXRyYW5nIiwiaG9UZW4iOiJWbyBUaGkgS2ltIFRyYW5nIiwiZW1haWwiOiJraW10cmFuZ0BnbWFpbC5jb20iLCJzb0R0IjoiMDkwODY1MjcxNSIsIm1hTmhvbSI6IkdIMDEiLCJtYUxvYWlOZ3VvaUR1bmciOiJBZG1pbiIsImlhdCI6MTYzNjIwMjcyOSwiZXhwIjoxNjM3MjM5NTI5fQ.AfYOzEk8rZ3TBDZR1wqa-bnCb25PwrFkVYx_DYWb40k",
+								"description": "admin",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6ImJhb3RyYW0iLCJob1RlbiI6Ik5ndXllbiBUdWFuIiwiZW1haWwiOiJqYXluZ3V5ZW4xOTg4QGdtYWlsLmNvbSIsInNvRHQiOiIwOTE4MTIzOTUxIiwibWFOaG9tIjoiR0gwMSIsIm1hTG9haU5ndW9pRHVuZyI6IktoYWNoSGFuZyIsImlhdCI6MTYyNzI3ODQ4NywiZXhwIjoxNjI4MzE1Mjg3fQ.XMr_5IR15RJPFtg30RmuhaFJjFmjlnFuj3KZxYh6or0",
+								"description": "KhachHang",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"maPhim\":1,\r\n  \"tenPhim\": \"Startrek\",\r\n  \"biDanh\": \"Rider\",\r\n  \"trailer\": \"https://www.youtube.com/watch?v=6ZfuNTqbHE8\",\r\n  \"hinhAnh\": \"\",\r\n  \"moTa\": \"There was an idea Avengers: Infinity War. In theaters April 27\",\r\n  \"maNhom\": \"GP01\",\r\n  \"ngayKhoiChieu\": \"2021-07-27T12:08:21.657\",\r\n  \"danhGia\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/api/quanlyphim/themphim"
+					},
+					"response": []
+				},
+				{
+					"name": "laydanhsachphim",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{url}}/api/quanlyphim/laydanhsachphim"
+					},
+					"response": []
+				},
+				{
+					"name": "laydanhsachphimphantrang",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/quanlyphim/laydanhsachphimphantrang/?maNhom=GP01&tenPhim=&soTrang=1&soPhanTuTrenTrang=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlyphim",
+								"laydanhsachphimphantrang",
+								""
+							],
+							"query": [
+								{
+									"key": "maNhom",
+									"value": "GP01"
+								},
+								{
+									"key": "tenPhim",
+									"value": ""
+								},
+								{
+									"key": "soTrang",
+									"value": "1"
+								},
+								{
+									"key": "soPhanTuTrenTrang",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "laydanhsachphimtheongay",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/quanlyphim/laydanhsachphimtheongay/?tenPhim=&tuNgay=25-07-2021&denNgay=28-07-2021",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlyphim",
+								"laydanhsachphimtheongay",
+								""
+							],
+							"query": [
+								{
+									"key": "maNhom",
+									"value": "GP01",
+									"disabled": true
+								},
+								{
+									"key": "tenPhim",
+									"value": ""
+								},
+								{
+									"key": "soTrang",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "soPhanTuTrenTrang",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "tuNgay",
+									"value": "25-07-2021"
+								},
+								{
+									"key": "denNgay",
+									"value": "28-07-2021"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "xoaphim",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6Im9hbmh0cmFuMTk4OCIsImhvVGVuIjoiTmd1eWVuIFR1YW4iLCJlbWFpbCI6ImpheW5ndXllbjE5ODhAZ21haWwuY29tIiwic29EdCI6IjA5MTgxMjM5NTEiLCJtYU5ob20iOiJHSDAxIiwibWFMb2FpTmd1b2lEdW5nIjoiQWRtaW4iLCJpYXQiOjE2Mjc2MTYzMzYsImV4cCI6MTYyODY1MzEzNn0.xRha5QDq8zBlD9V40Ev2joF-g_3WQWnIHvNTm-4JbHo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/quanlyphim/xoaphim?maPhim=3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlyphim",
+								"xoaphim"
+							],
+							"query": [
+								{
+									"key": "maPhim",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "uploadhinhanhphim",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6ImtpbXRyYW5nIiwiaG9UZW4iOiJWbyBUaGkgS2ltIFRyYW5nIiwiZW1haWwiOiJraW10cmFuZ0BnbWFpbC5jb20iLCJzb0R0IjoiMDkwODY1MjcxNSIsIm1hTmhvbSI6IkdIMDEiLCJtYUxvYWlOZ3VvaUR1bmciOiJBZG1pbiIsImlhdCI6MTYzNjIwMjcyOSwiZXhwIjoxNjM3MjM5NTI5fQ.AfYOzEk8rZ3TBDZR1wqa-bnCb25PwrFkVYx_DYWb40k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Dell/Pictures/wonder women.jfif"
+								},
+								{
+									"key": "maPhim",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{url}}/api/quanlyphim/uploadhinhanhphim"
+					},
+					"response": []
+				},
+				{
+					"name": "capnhatphim",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YWlLaG9hbiI6ImtpbXRyYW5nIiwiaG9UZW4iOiJWbyBUaGkgS2ltIFRyYW5nIiwiZW1haWwiOiJraW10cmFuZ0BnbWFpbC5jb20iLCJzb0R0IjoiMDkwODY1MjcxNSIsIm1hTmhvbSI6IkdIMDEiLCJtYUxvYWlOZ3VvaUR1bmciOiJBZG1pbiIsImlhdCI6MTYzNjIwMjcyOSwiZXhwIjoxNjM3MjM5NTI5fQ.AfYOzEk8rZ3TBDZR1wqa-bnCb25PwrFkVYx_DYWb40k",
+								"description": "admin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"maPhim\": 2,\r\n  \"tenPhim\": \"Co Ba Sai Gon Update V3\",\r\n  \"biDanh\": \"Co Ba Update v3\",\r\n  \"trailer\": \"https://www.youtube.com/watch?v=6ZfuNTqbHE8\",\r\n  \"hinhAnh\": \"https://unsplash.com/photos/N840KRXQPa4\",\r\n  \"moTa\": \"There was an idea Avengers: Infinity War. In theaters April 27\",\r\n  \"maNhom\": \"GP01\",\r\n  \"ngayKhoiChieu\": \"2021-07-27T12:08:21.657\",\r\n  \"danhGia\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/api/quanlyphim/capnhatphim"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "quanlyrap",
+			"item": [
+				{
+					"name": "laythongtinhethongrap",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/quanlyrap/laythongtinhethongrap?maHeThongRap=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlyrap",
+								"laythongtinhethongrap"
+							],
+							"query": [
+								{
+									"key": "maHeThongRap",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "laythongtincumraptheohethong",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/quanlyrap/laythongtincumraptheohethong?maHeThongRap=BHDStar",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"quanlyrap",
+								"laythongtincumraptheohethong"
+							],
+							"query": [
+								{
+									"key": "maHeThongRap",
+									"value": "BHDStar"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
